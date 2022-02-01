@@ -1,38 +1,65 @@
-.App {
-  text-align: center;
+:root {
+  --White: hsl(0, 0%, 100%);
+  --LightGray: hsl(212, 45%, 89%);
+  --GrayishBlue: hsl(220, 15%, 55%);
+  --DarkBlue: hsl(218, 44%, 22%);
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+body {
+  background-color: var(--LightGray);
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  height: 100vh;
 }
-
-.App-link {
-  color: #61dafb;
+.card {
+  background-color: var(--White);
+  width: 330px;
+  height: 550px;
+  border-radius: 20px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Outfit', sans-serif;
+  font-size: 15px;
+  position: relative;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.card_img{
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+.img-qr {
+  width: 330px;
+  height: auto;
+  border-radius: 10px;
+}
+.card-texts {
+  width: 330px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 20px;
+  padding: 10px;
+}
+.first-text {
+  font-size: 25px;
+  font-weight: 700;
+  color: var(--DarkBlue);
+  margin: 0 10px;
+  text-align: center;
+  padding: 10px;
+}
+.second-text {
+  font-size: 15px;
+  font-weight: 400;
+  color: var(--GrayishBlue);
+  padding: 0 40px;
+  text-align: center;
+  word-spacing: 3px;
 }
